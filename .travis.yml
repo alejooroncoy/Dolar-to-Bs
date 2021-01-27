@@ -28,6 +28,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   local-dir: dist/
   target-branch: gh-pages
-  commit_message: "Deploy of GITHUB Actions"
+  commit_message: "Deploy of GITHUB PAGES"
   on:
     branch: main
