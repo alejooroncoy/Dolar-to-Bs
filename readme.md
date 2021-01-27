@@ -1,4 +1,4 @@
-<h1> Dolar to Bs v2</h1>
+<h1 align='center'> Dolar to Bs v2</h1>
 
 ## ¿Porqué v2?
 

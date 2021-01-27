@@ -11,7 +11,8 @@ h1.title {
   margin: 0;
   color: white;
   text-align: center;
-  font-size: 5em;
+  font-size: 3em;
+  outline: none;
 }
 h1.title::after {
   content: "v2";
@@ -31,7 +32,7 @@ main.container {
 
 form.form {
   border-radius: 0.3em;
-  width: 50%;
+  width: 80%;
   height: 50%;
   background: linear-gradient(50deg, rgb(66, 66, 66), rgb(15, 15, 31));
   display: grid;
@@ -40,12 +41,21 @@ form.form {
   box-shadow: 0px 0px 40px 1px rgb(235, 235, 235);
 }
 
-form.form > input {
+form.form > div {
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+form.form > div input {
   border: none;
   border-radius: 0.1em;
   padding: 1em;
-  width: 30%;
+  width: 100%;
   outline: none;
+}
+
+form.form > div label {
+  font-size: 0.8em;
+  color: white;
 }
 
 form.form button[type="submit"] {
@@ -71,7 +81,7 @@ form.form button:hover {
   color: black;
 }
 
-span.result.fade {
+div.result.fade {
   animation: fade 1s ease;
 }
 
@@ -92,4 +102,21 @@ div.success span.successIcon {
   grid-area: success;
   font-size: 2rem;
   color: rgb(58, 58, 58);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  height: 2.3rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+footer > span {
+  margin: 0px 0.5em;
+}
+footer > span a {
+  color: white;
+  text-decoration: none;
 }

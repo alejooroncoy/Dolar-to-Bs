@@ -1,0 +1,22 @@
+@media (min-width: 640px) {
+  h1.title {
+    font-size: 4.5em;
+  }
+}
+@media (min-width: 1024px) {
+  h1.title {
+    font-size: 5em;
+  }
+  form.form {
+    width: 60%;
+  }
+  form.form > input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1535px) {
+  form.form {
+    width: 50%;
+  }
+}

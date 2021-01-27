@@ -1,5 +1,6 @@
 import './css/style.css';
 import './css/animation.css';
+import './css/mediasQueries.css';
 import { 
   inputs,
   form,

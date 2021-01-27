@@ -1,6 +1,6 @@
 const values = {
-  mulValue: localStorage.getItem('mulValue') || '',
-  costValue: localStorage.getItem('costValue') || '',
+  mulValue: localStorage.getItem('mulValue') || 0,
+  costValue: localStorage.getItem('costValue') || 0,
 };
 
 const $values = new Proxy(values, {
@@ -9,11 +9,11 @@ const $values = new Proxy(values, {
       console.error(`${prop} no existe en el objeto values`);
       return;
     }
-    return Reflect.get(target, prop);
+    return Number(Reflect.get(target, prop));
   },
   set(target, prop, value) {
     localStorage.setItem(prop, value);
-    Reflect.set(target, prop, value)
+    Reflect.set(target, prop, Number(value))
   }
 });
 
