@@ -9,6 +9,7 @@
   }
   form.form {
     width: 60%;
+    max-width: 60%;
   }
   form.form > input::placeholder {
     font-size: 1rem;
@@ -18,5 +19,6 @@
 @media (min-width: 1535px) {
   form.form {
     width: 50%;
+    max-width: 50%;
   }
 }

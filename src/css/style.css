@@ -50,6 +50,7 @@ form.form > div input {
   border-radius: 0.1em;
   padding: 1em;
   width: 100%;
+  box-sizing: border-box;
   outline: none;
 }
 
