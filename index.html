@@ -2,23 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=initialevice-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dolar-to-Bs</title>
   <link rel="stylesheet" href="index.css"/>
   <link rel="shortcut icon" href="./img/icon-dolarbs.png" type="image/x-icon">
 </head>
 <body>
   <main class="container">
-      <h1 class='title'> 
+      <h1 class='title' tabindex='0'> 
         Dolar to BS 
       </h1>
   	  <form class='form'>
-        <input class="dolar-cost" placeholder="Ingresa el valor actual del dolar" type="number" name='costValue' step="any" required />
-  	    <input class="dolar-mul" name='mulValue' placeholder="Ingresa la cantidad de dolares" type="number" step="any" required />
+        <div>
+          <label for="cost">
+            Ingresa el valor actual del dolar:
+          </label>
+          <input class="dolar-cost" placeholder="Ingresa el valor actual del dolar" id='cost' type="number" name='costValue' step="any" required />
+        </div>
+        <div>
+          <label for="mul">
+            Ingresa la cantidad de dolares:
+          </label>
+          <input class="dolar-mul" id='mul' name='mulValue' placeholder="Ingresa la cantidad de dolares" type="number" step="any" required />
+        </div>
         <button type='submit' class="mostrar">Sacar costo</button>
       </form>
-      <span class="result"></span>
+      <div class="result"></div>
   </main>
+    <footer>
+      Credits: 
+      <span>Alejo Oroncoy <a href='https://github.com/alejooroncoy'>@alejooroncoy</a> </span>
+      <span>Crokepy <a href='https://github.com/Crokepy'>@drcroque</a> </span>
+    </footer>
      <script async type='module' src='./index.js'></script>
 </body>
 </html>
